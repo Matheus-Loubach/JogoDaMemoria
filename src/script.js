@@ -79,7 +79,7 @@ function createButton()
      input.type = 'button';  
      input.value = 'Fim de Jogo!!Reiniciar?';     
      
-     if(score == 1){
+     if(score == 6){
      input.onclick = function(){
 
        document.location.reload(true);
