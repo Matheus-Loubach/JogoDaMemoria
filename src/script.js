@@ -75,18 +75,18 @@ function resetBoard(){
 //função que verifica se o jogo acabou
 function createButton()
 {
-     var batsu  = document.createElement("input");
-     batsu.type = 'button';  
-     batsu.value = 'Fim de Jogo!!Reiniciar?';     
+     var input  = document.createElement("input");
+     input.type = 'button';  
+     input.value = 'Fim de Jogo!!Reiniciar?';     
      
-     if(score == 6){
-     batsu.onclick = function(){
+     if(score == 1){
+     input.onclick = function(){
 
-      document.location.reload(true);
-
+       document.location.reload(true);
+  
        };  
       
-     document.body.appendChild(batsu);
+       document.body.appendChild(input);
       }
 
 }
