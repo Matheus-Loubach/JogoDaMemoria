@@ -14,8 +14,6 @@ body{
   justify-content: center;
 }
 
-
-
 .card:active{
   transform: scale(0.97);
   transition: transform .3s;
@@ -45,6 +43,14 @@ body{
   position: absolute;
   color: rgb(0, 0, 0);
   text-align:left;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 input{

@@ -6,6 +6,14 @@ let lockBoard = false;
 let score = 0;
 
 
+
+//adiciona evento de clique na carta
+cards.forEach((card)=> {
+  card.addEventListener('click', flipCard)
+});
+
+
+
 //função que embaralha as cartas
 (
   function Embaralhar(){
@@ -39,7 +47,7 @@ function checkForMath(){
   if(firstCard.dataset.card === secondCard.dataset.card){
     disibleCards();// SE FOR IGUAL A CARTA FICA VIRADA
     score++;
-    createButton();
+    createButton();  
     return;
   }
 
@@ -80,21 +88,13 @@ function createButton()
      input.value = 'Fim de Jogo!!Reiniciar?';     
      
      if(score == 6){
-     input.onclick = function(){
-
-       document.location.reload(true);
-  
-       };  
+     input.onclick = function(){document.location.reload(true);};  
       
        document.body.appendChild(input);
-      }
-
+      }   
+     
 }
 
-//adiciona evento de clique na carta
-cards.forEach((card)=> {
-  card.addEventListener('click', flipCard)
-});
 
 
  
