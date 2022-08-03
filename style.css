@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  background-image: url(/img/a68895fc20900da3273cec2f4a153b05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card:active{
+  transform: scale(0.97);
+  transition: transform .3s;
+}
+
+.card-front, .card-back{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: rgb(0, 0, 0); 
+  border-radius: 5px;
+  backface-visibility: hidden;/*Uma propriedade que retira o verso do elemento*/
+}
+
+.card-front{
+  transform: rotateY(180deg);/*já deica a imagem dos personagens viradas*/
+}
+
+/*animação flip*/
+
+.card.flip, .card-front{
+  transform: rotateY(180deg);
+  background-color: rgb(255, 255, 255); 
+}
+.nome{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  text-align:left;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+input{
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+
